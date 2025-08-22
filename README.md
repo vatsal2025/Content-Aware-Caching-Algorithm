@@ -1,10 +1,11 @@
 # Content-Aware-Caching-Algorithm
 
 
-```markdown
+
 # Content-Aware Caching in xv6 (RISC-V)
 
-A metadata-driven caching layer for xv6 that outperforms traditional LRU by leveraging file **type**, **size**, and **historical access frequency** to guide caching, promotion, and eviction.
+A metadata-driven caching layer for xv6 that outperforms traditional LRU by leveraging 
+file **type**, **size**, and **historical access frequency** to guide caching, promotion, and eviction.
 
 ---
 
@@ -20,7 +21,6 @@ A metadata-driven caching layer for xv6 that outperforms traditional LRU by leve
 
 ## 🧱 Architecture
 
-```
 
 +---------------------------+
 \| User Applications         |
@@ -32,7 +32,7 @@ A metadata-driven caching layer for xv6 that outperforms traditional LRU by leve
 \| Disk Storage              |
 +---------------------------+
 
-````
+
 
 **Cache entry fields (conceptual):**
 - `filename`, `size`, `data*`
@@ -70,20 +70,14 @@ A metadata-driven caching layer for xv6 that outperforms traditional LRU by leve
 
 > Requires: Linux/macOS, RISC-V toolchain, `qemu`
 
-```bash
-# Clone your fork/repo
-git clone https://github.com/<your-username>/<your-repo>.git
-cd <your-repo>  # xv6-riscv tree with caching changes
-
 # Build & run xv6 in QEMU
 make qemu
-````
+
 
 Inside xv6, run your file-access tests or workload generator to observe cache stats (hit/miss, evictions). If you’ve added a debug flag, rebuild with:
 
-```bash
+
 make clean && make CFLAGS+='-DCACHE_DEBUG'
-```
 
 ---
 
