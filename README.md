@@ -162,5 +162,3 @@ Expose these via `#define`s or a small config header so experiments are reproduc
 
 **Vatsal Saxena**
 Systems & performance optimization, storage, operating systems.
-
-```
