@@ -164,6 +164,3 @@ Expose these via `#define`s or a small config header so experiments are reproduc
 Systems & performance optimization, storage, operating systems.
 
 ```
-
-If you want, I can tailor the **“Repo Hints”** section to your exact file paths and add a small **log-to-CSV** Python snippet for plotting hit rate/latency from your xv6 output.
-```
