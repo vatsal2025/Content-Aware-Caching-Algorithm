@@ -105,8 +105,6 @@ Typical xv6 touchpoints for a file-system cache:
 * A small `cache/` or `kernel/cache*` set of sources for the data structures & policy
 * Optional `user/` test programs to stress the cache (sequential, hot-set, mixed-size, bursty)
 
-> If your repo layout differs, add a short section listing the exact files you modified (e.g., `fs.c`, `bio.c`, `buf.h`, `cache.c`).
-
 ---
 
 ## 🧩 Configuration
